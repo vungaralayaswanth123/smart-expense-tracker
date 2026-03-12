@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Expense Tracker</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Smart Expense Tracker</h1>
+
+<h2>Add Expense</h2>
+
+<form>
+
+<label>Amount:</label>
+<input type="number" name="amount">
+
+<label>Category:</label>
+<input type="text" name="category">
+
+<label>Description:</label>
+<input type="text" name="description">
+
+<button type="submit">Add Expense</button>
+
+</form>
+
+</body>
+</html>
