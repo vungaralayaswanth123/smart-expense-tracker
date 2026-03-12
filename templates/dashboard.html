@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Expense Dashboard</title>
+</head>
+
+<body>
+
+<h1>Expense Dashboard</h1>
+
+<table border="1">
+
+<tr>
+<th>Amount</th>
+<th>Category</th>
+<th>Description</th>
+</tr>
+
+{% for expense in expenses %}
+
+<tr>
+<td>{{ expense.amount }}</td>
+<td>{{ expense.category }}</td>
+<td>{{ expense.description }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
